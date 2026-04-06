@@ -1,0 +1,10 @@
+module hs(a,b,diff,bor);
+input a,b;
+wire a1;
+output diff,bor;
+
+xor(diff,a,b);
+not(a1,a);
+and(bor,a1,b);
+
+endmodule
